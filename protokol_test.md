@@ -2,17 +2,31 @@
 
 ## **Git/GitHub & Shell Commands**
 
-#### Git & GitHub Begriffe
+### Git & GitHub Begriffe
 
-Git ist ein System das entwickelt wurde um Versionen von Textdateien zu 
+Git ist ein System zur Versionskontrolle. Es wurde entwickelt um Versionen von Textdateien (i.e. code) abzutimmen und Kollaboration effizienter und einfacher zu gestalten.
 
-![GitHub explained](https://blog.red-badger.com/hubfs/Imported_Blog_Media/img-257.jpg)
+
+
+#### Die wesentlichen Schritte
+
+1. **init:** *Projekt initialisieren.* Es wird ein unsichtbarer Ordner angelegt (.git) in dem sich alle Informationen über Änderungen an Dateien befinden
+2. **stage:** *Sammeln der Änderungen.* Änderungen an Dateien werden nicht automatisch übernommen. Vor dem synchroniesieren wird manuell eine Auswahl der zu synchronisierenden Dateien getroffen *(stage changes)*.
+3. **commit** *Synchronisieren.* Um die gesammelten Dateien von der stage mit der git-Historie zu synchronisieren muss ein commit gemacht werden.
+
+4. **master & branch** *collaboration* Der Stamm (master), welcher später aus dem fertigen Projekt besteht, kann auch Abzweigungen haben (branch). Der **master** sollte fertiggestellte bzw. funktionierende code-Abschnitte beinhalten, also eine stabile Version. **Branches** dienen dazu die Kollaboration zu erleichtern, aber auch die Arbeit an neuen oder experimentellen Ideen und Features sicher zu stellen.
+5. **merge** Wenn ein **branch** bereit ist Teil der stabilen Version zu werden wird ein merge initiiert um den code zusammen zu legen.
+
+
+<img alt="GitHub explained" src="https://blog.red-badger.com/hubfs/Imported_Blog_Media/img-257.jpg" width="500px"><br>
 *Quelle: blog.red-badger.com/2016/11/29/gitgithub-in-plain-english*
+
+
 
 
 # Cheat Sheet für **Shell Befehle**
 
-#### Wechseln zu anderen Ordnern / Inhalt anzeigen etc.:
+### Wechseln zu anderen Ordnern / Inhalt anzeigen etc.:
 **Befehl** | **Effekt**
 ------ | ------
 `cd [Ordnername]` | change directory
@@ -24,7 +38,7 @@ Git ist ein System das entwickelt wurde um Versionen von Textdateien zu
  `curl` | lädt Objekt über eine URL
  `cat` | zeigt den Inhalt einer Datei
 
-#### Neu, verschieben, kopieren, löschen, öffnen:
+### Neu, verschieben, kopieren, löschen, öffnen:
 
 **Befehl** | **Effekt**
 ------ | ------
