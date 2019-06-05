@@ -10,7 +10,7 @@ nav>ul>li
 </nav>
 ```
 
-### Sibling: +
+## Sibling: +
 div+p+bq
 
 ```html
